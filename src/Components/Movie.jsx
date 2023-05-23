@@ -11,8 +11,8 @@ function Movie(props) {
     return <p>Loading...</p>;
   }
   return (
-    <div className="md:max-w-5xl sm:max-w-3xl xs:max-w-md w-full">
-      <div className="flex-row flex flex-wrap justify-around">
+    <div className="md:max-w-5xl sm:max-w-3xl mx-auto xs:max-w-md w-full">
+      <div className="flex-row flex flex-wrap justify-center">
         {headlines.map((headline) => (
           <MovieDetails key={headline.title} {...headline} />
         ))}

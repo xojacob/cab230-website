@@ -7,14 +7,14 @@ function SearchBar(search) {
   const [peopleSearch, setPeopleSearch] = useState("");
   const [idSearch, setIdSearch] = useState("");
   return (
-    <div className="container py-2 flex justify-center">
-      <div className="flex flex-col justify-between ">
+    <div className="container py-2 flex justify-center mx-auto">
+      <div className="flex flex-col justify-between mb-2">
         <input
           name="title"
           type="search"
           id="title"
           aria-labelledby="search-button"
-          className="rounded-md max-w-[200px] px-auto py-1 pl-2 caret-violet-500 placeholder-gray-500 font-sans border-violet-900 border-2 w-64"
+          className="rounded-md max-w-[200px] px-auto py-1 my-2 pl-2 caret-violet-500 placeholder-gray-500 font-sans border-violet-900 border-2 w-64"
           value={titleSearch}
           onChange={(e) => setTitleSearch(e.target.value)}
           placeholder="Search Titles"
@@ -36,7 +36,7 @@ function SearchBar(search) {
           type="search"
           id="year"
           aria-labelledby="search-button"
-          className="rounded-md max-w-[200px] px-auto mx-3 py-1 pl-2 caret-violet-500 placeholder-gray-500 border-violet-900 border-2 w-24 "
+          className="rounded-md max-w-[200px] px-auto my-2 mx-3 py-1 pl-2 caret-violet-500 placeholder-gray-500 border-violet-900 border-2 w-24 "
           value={yearSearch}
           onChange={(e) => setYearSearch(e.target.value)}
           placeholder="Year"
@@ -56,11 +56,12 @@ function SearchBar(search) {
       <button
         id="search-button"
         type="button"
-        className={`${styles.searchButtonGradient}bg-violet-700`}
+        className={`${styles.searchButtonGradient} font-poppins border-none my-2`}
         onClick={() => {
           search.title(titleSearch);
           search.year(yearSearch);
           search.movieid(idSearch);
+          search.personid(peopleSearch);
         }}
       >
         Search

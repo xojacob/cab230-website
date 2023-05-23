@@ -6,6 +6,8 @@ const styles = {
     "transition-all ease-in-out bg-gradient-to-t from-[#67B88E] via-[#B8483A] to-[#5E56B6] duration-150 rounded-2xl bg-size-200 bg-pos-0 hover:bg-pos-100",
   searchButtonGradient:
     "transition-all ease-in-out bg-gradient-to-b from-violet-700 via-violet-700 to-[#5460F9] duration-150 bg-size-200 bg-pos-0 hover:bg-pos-100",
+  searchButtonGradient2:
+    "transition-all ease-in-out bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-violet-900 via-violet-700 to-[#5184E2] duration-150 bg-size-200 bg-pos-00 hover:bg-size-100 hover:bg-pos-100",
   heading2:
     "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
   paragraph:
